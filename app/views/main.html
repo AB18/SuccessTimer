@@ -1,0 +1,33 @@
+
+<div class="container center-block">
+  
+  <div class="btn-group btn-group-justified" role="group" aria-label="..." >
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary btn-lg" ng-click="startTask()">Start Task</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary btn-lg" ng-click="startShortBreak()">Short Break</button>
+    </div>
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary btn-lg" ng-click="startLongBreak()">Long Break</button>
+    </div>
+  </div>
+  <div class="center-block">
+    <h1 class = "center-block">
+      <timer id="taskTimer" ng-show="showTaskTimer" interval="1000" finish-callback="timerfinished()" countdown="1200" 
+           autostart="false" max-time-unit="'minute'">{{minutes}} : {{seconds}}</timer>
+      <timer id="shortBreakTimer" ng-show="showShortBreakTimer" interval="1000" finish-callback="timerfinished()" 
+           countdown="300" autostart="false" max-time-unit="'minute'">{{minutes}} : {{seconds}}</timer>
+      <timer id="longBreakTimer" ng-show="showLongBreakTimer" interval="1000" finish-callback="timerfinished()" 
+           countdown="600" autostart="false" max-time-unit="'minute'">{{minutes}} : {{seconds}}</timer>
+      <!--   end-time = "endTime" autostart="false" -->
+    </h1>
+  </div>
+
+  <div class="center-block">
+    <button type="button" class="btn btn-default" ng-click="startTimer()">Start</button>
+    <button type="button" class="btn btn-default" ng-click="stopTimer()">Stop</button>
+    <button type="button" class="btn btn-default" ng-click="resetTimer()">Reset</button>
+  </div>
+  
+</div>
