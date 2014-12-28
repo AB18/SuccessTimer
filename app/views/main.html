@@ -12,8 +12,8 @@
       <button type="button" class="btn btn-primary btn-lg" ng-click="startLongBreak()">Long Break</button>
     </div>
   </div>
-  <div class="center-block">
-    <h1 class = "center-block">
+  <div class="center-timer padding-medium">
+    <h1>
       <timer id="taskTimer" ng-show="showTaskTimer" interval="1000" finish-callback="timerfinished()" countdown="1200" 
            autostart="false" max-time-unit="'minute'">{{minutes}} : {{seconds}}</timer>
       <timer id="shortBreakTimer" ng-show="showShortBreakTimer" interval="1000" finish-callback="timerfinished()" 
@@ -24,10 +24,10 @@
     </h1>
   </div>
 
-  <div class="center-block">
-    <button type="button" class="btn btn-default" ng-click="startTimer()">Start</button>
-    <button type="button" class="btn btn-default" ng-click="stopTimer()">Stop</button>
-    <button type="button" class="btn btn-default" ng-click="resetTimer()">Reset</button>
+  <div class="center-div">
+    <button type="button" class="btn btn-success" ng-click="startTimer()">Start</button>
+    <button type="button" class="btn btn-danger" ng-click="stopTimer()">Stop</button>
+    <button type="button" class="btn btn-info" ng-click="resetTimer()">Reset</button>
   </div>
   
 </div>

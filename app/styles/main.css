@@ -1,0 +1,19 @@
+body.landing {
+    background: #5B5579;
+  }
+
+.center-timer {
+  display: block;
+  margin: 0 auto;
+  text-align : center;
+}
+
+.center-div {
+  display: block;
+  margin: 0 auto;
+  text-align : center;
+}
+
+.padding-medium {
+  padding : 40px 0px 40px 0px;
+}
