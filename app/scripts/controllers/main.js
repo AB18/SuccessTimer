@@ -17,14 +17,6 @@ var successTimerApp = angular.module('successTimerApp');
       $scope.showShortBreakTimer = false;
       $scope.showLongBreakTimer = false;
       $scope.$broadcast('timer-start');
-      //var song = new buzz.sound('http://lso.co.uk/images/LSO0092ex2b.mp3')
-      //song.play();
-//       var currrentDate = new Date();
-//       currrentDate.setMinutes(currrentDate.getMinutes()+20);
-//       console.log(currrentDate);
-//       console.log(currrentDate.valueOf());
-//       $scope.$broadcast('timer-stop');
-//       $scope.countdown = 1200 ;
     }
     $scope.startShortBreak = function() {
       $scope.$broadcast('timer-reset');
@@ -59,12 +51,3 @@ var successTimerApp = angular.module('successTimerApp');
     
   });
 
-  
-
-//  successTimerApp.directive('sttimer', function(){
-//    return {
-//      templateUrl: '/views/directive/sttimer.html', 
-//      replace: true,
-//      restrict: 'E'
-//    };
-//  });
